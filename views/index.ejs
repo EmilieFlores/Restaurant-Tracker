@@ -21,7 +21,7 @@
                 <button type="submit"><span class="fas fa-plus"></span>Add Restaurant </button>
             </form>
             <ul class="tracker-list">
-                <% trackerFood.forEach(food => { %>
+                <% food.forEach(food => { %>
                 <li class="tracker-list-item">
                     <div class="tracker-list-item-title"><%= food.title %></div>
                     <a href="/edit/<%= food._id %>" class="edit">

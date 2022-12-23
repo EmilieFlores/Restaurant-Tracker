@@ -16,9 +16,9 @@
 <body>
     <section class = 'tracker-container'>
         <h2>Edit list Item</h2>
-        <section class="ttrackerInfo">
+        <section class="trackerInfo">
             <ul class="tracker-list">
-                <% trackerFood.forEach(food => {%>
+                <% food.forEach(food => {%>
                     <% if(food._id==idfood){ %>
                         <li class="tracker-list-item">
                             <form action="/edit/<%= food._id %>" method="POST">
