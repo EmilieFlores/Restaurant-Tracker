@@ -5,7 +5,9 @@ const passport = require('passport')
 // const session = require('express-session')
 require('dotenv').config({path: './config/.env'})
 const connectDB = require('./config/database')
-const homeRoute = require('./routes/home-router')
-const editRoute = require('./routes/edit-router')
-const signupRoute = require('./routes/signup-router')
+// const homeRoute = require('./routes/home-router')
+// const editRoute = require('./routes/edit-router')
+// const signupRoute = require('./routes/signup-router')
 const PORT = 2121
+
+connectDB()
