@@ -1,11 +1,11 @@
-const quotes = require('../models/quotes')
+const food = require('../models/food')
 
 module.exports = {
     getIndex : async (req, res) => {
         try{
-            const oneLiners = await
+            const food = await
             quotes.find()
-            res.render('index.ejs', { quotes: oneLiners })
+            res.render('index.ejs', { place: food })
         } catch (error) {
             res.status(500).send({message: error.message})
         }
