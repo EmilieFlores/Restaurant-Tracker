@@ -3,6 +3,6 @@ const router = express.Router()
 const homeController = require('../controllers/home-controller')
 
 router.get('/', homeController.getIndex)
-router.post('/', homeController.addFoodItem)
+router.post('/', homeController.createFoodItem)
 
 module.exports = router

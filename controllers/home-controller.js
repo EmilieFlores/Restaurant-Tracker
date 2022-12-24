@@ -12,7 +12,7 @@ module.exports = {
     },
 
     createFoodItem : async (req, res) => {
-        const addFoodItem = new quotes(
+        const addFoodItem = new food(
             {
                 title: req.body.title
             }
