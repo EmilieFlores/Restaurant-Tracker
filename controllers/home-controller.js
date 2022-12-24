@@ -11,22 +11,21 @@ module.exports = {
         }
     },
 
-    // createOneLiner : async (req, res) => {
-    //     const addOneLiner = new quotes(
-    //         {
-    //             quote: req.body.quote,
-    //             name: req.body.name
-    //         }
-    //     )
-    //     try {
-    //         await addOneLiner.save()
-    //         console.log(addOneLiner)
-    //         res.redirect('/')
-    //     } catch (err) {
-    //         if (err) return res.status(500).send(err)
-    //         res.redirect('/')
-    //     }
-    //     }
+    createFoodItem : async (req, res) => {
+        const addFoodItem = new food(
+            {
+                title: req.body.title
+            }
+        )
+        try {
+            await addFoodItem.save()
+            console.log(addFoodItem)
+            res.redirect('/')
+        } catch (err) {
+            if (err) return res.status(500).send(err)
+            res.redirect('/')
+        }
+        }
 
 }
 
