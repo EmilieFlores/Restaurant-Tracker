@@ -6,7 +6,7 @@ const passport = require('passport')
 require('dotenv').config({path: './config/.env'})
 const connectDB = require('./config/database')
 const homepageRoute = require('./routes/homepage-route')
-// const editRoute = require('./routes/edit-router')
+const editRoute = require('./routes/edit-router')
 // const signupRoute = require('./routes/signup-router')
 const PORT = 2121
 
@@ -18,6 +18,7 @@ app.use(express.urlencoded({extended: true}));
 
 
 app.use("/", homepageRoute)
+app.use('/edit', editRoute)
 
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is running on port ${PORT}`)
