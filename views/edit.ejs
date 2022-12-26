@@ -23,6 +23,7 @@
                         <li class="tracker-list-item">
                             <form action="/edit/<%= food._id %>" method="POST">
                                 <input type="text" value="<%= food.title %>" name="title">
+                                <input type="text" value="<%= food.date %>" name="date">
                                 <button type="submit" class="confirm">Confirm</button>
                                 <a href="/" class="cancel">Cancel</a>
                             </form>
