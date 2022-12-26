@@ -19,7 +19,7 @@
         <section class="trackerInfo">
             <ul class="tracker-list">
                 <% foodChoice.forEach(food => {%>
-                    <% if(food._id==idfood){ %>
+                    <% if( food._id == idfood){ %>
                         <li class="tracker-list-item">
                             <form action="/edit/<%= food._id %>" method="POST">
                                 <input type="text" value="<%= food.title %>" name="title">
@@ -36,8 +36,8 @@
                                     <div class="tracker-list-item-content">
                                         <%= food.date %>
                                     </div>
-                                    <a href="/edit/<%= foodChoice._id %>" class="edit"><span class="fas fa-edit"></span></a>
-                                    <a href="/edit/remove/<%= foodChoice._id %>" class="remove"><span class="fas fa-trash"></span></a>
+                                    <a href="/edit/<%= food._id %>" class="edit"><span class="fas fa-edit"></span></a>
+                                    <a href="/edit/remove/<%= food._id %>" class="remove"><span class="fas fa-trash"></span></a>
                                 </li>
                                 <% } %>
                                      <% }) %>
