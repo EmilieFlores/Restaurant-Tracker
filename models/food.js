@@ -6,8 +6,8 @@ const foodSchema = new mongoose.Schema({
         require: true
     },
     content: {
-        type: Date,
-        default: Date.current
+        type: String,
+        require: true
     },
     date: {
         type: Date,

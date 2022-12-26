@@ -14,7 +14,8 @@ module.exports = {
     createFoodItem : async (req, res) => {
         const addFoodItem = new food(
             {
-                title: req.body.title
+                title: req.body.title,
+                content: req.body.content
             }
         )
         try {
