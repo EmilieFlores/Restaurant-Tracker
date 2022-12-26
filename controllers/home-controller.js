@@ -15,7 +15,7 @@ module.exports = {
         const addFoodItem = new food(
             {
                 title: req.body.title,
-                content: req.body.content
+                date: req.body.date
             }
         )
         try {

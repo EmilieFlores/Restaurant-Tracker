@@ -5,13 +5,9 @@ const foodSchema = new mongoose.Schema({
         type: String,
         require: true
     },
-    content: {
+    date: {
         type: String,
         require: true
-    },
-    date: {
-        type: Date,
-        default: Date.now
     }
 })
 module.exports = mongoose.model('food', foodSchema, 'food');

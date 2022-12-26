@@ -16,15 +16,15 @@
         <h2>Eat Out Tracker</h2>
         <section class="trackerInfo">
             <form action ="/" method="POST" class="tracker-header">
-                <input type="text" name="title" placeholder="title">
-                <textarea rows="6" cols="45" name="content" placeholder="content"></textarea>
+                <input type="text" name="title" placeholder="Restaurant">
+                <textarea rows="6" cols="45" name="date" placeholder="Date"></textarea>
                 <button type="submit"><span class="fas fa-plus"></span>Add Restaurant </button>
             </form>
             <ul class="tracker-list">
                 <% food.forEach(food => { %>
                 <li class="tracker-list-item">
                     <div class="tracker-list-item-title"><%= food.title %></div>
-                    <div class="tracker-list-item-title"><%= food.content %></div>
+                    <div class="tracker-list-item-title"><%= food.date %></div>
                     <a href="/edit/<%= food._id %>" class="edit">
                         <span class="fas fa-edit"></span>
                     </a>
