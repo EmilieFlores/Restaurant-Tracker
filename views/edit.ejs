@@ -31,10 +31,7 @@
                         <% } else { %> 
                                 <li class="tracker-list-item">
                                     <div class="tracker-list-item-title">
-                                        <%= food.title %>
-                                    </div>
-                                    <div class="tracker-list-item-content">
-                                        <%= food.date %>
+                                        <%= food.title %>: <%= food.date %>
                                     </div>
                                     <a href="/edit/<%= food._id %>" class="edit"><span class="fas fa-edit"></span></a>
                                     <a href="/edit/remove/<%= food._id %>" class="remove"><span class="fas fa-trash"></span></a>
