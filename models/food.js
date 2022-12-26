@@ -1,8 +1,13 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const { stringify } = require('querystring');
 const foodSchema = new mongoose.Schema({
     title: {
         type: String,
         require: true
+    },
+    content: {
+        type: Date,
+        default: Date.current
     },
     date: {
         type: Date,

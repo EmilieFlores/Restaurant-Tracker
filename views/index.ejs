@@ -24,6 +24,7 @@
                 <% food.forEach(food => { %>
                 <li class="tracker-list-item">
                     <div class="tracker-list-item-title"><%= food.title %></div>
+                    <div class="tracker-list-item-title"><%= food.content %></div>
                     <a href="/edit/<%= food._id %>" class="edit">
                         <span class="fas fa-edit"></span>
                     </a>
