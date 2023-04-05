@@ -21,9 +21,3 @@ module.exports = connectDB
 
 
 
-
-
-
-
-
-
